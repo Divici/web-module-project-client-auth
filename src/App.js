@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
+
 import Login from './components/Login';
 import Logout from './components/Logout';
 import FriendsList from './components/FriendsList';
 import AddFriends from './components/AddFriends';
+import PrivateRoute from './components/PrivateRoute';
 
 function App() {
   return (
@@ -34,18 +36,15 @@ function App() {
         <div className='border-bottom'></div>
       
         <Switch>
-          <Route exact path='/friends/add'>
-            <AddFriends/>
-          </Route>
-          <Route path='/friends'>
-            <FriendsList/>
-          </Route>
+          <PrivateRoute exact path='/friends/add' component={AddFriends} />
+          
+          <PrivateRoute path='/friends' component={FriendsList} />
+          
           <Route path='/login'>
             <Login/>
           </Route>
-          <Route path='/logout'>
-            <Logout/>
-          </Route>
+          
+          <PrivateRoute path='/logout' component={Logout} />
           <Route path='/'>
             <Login/>
           </Route>
