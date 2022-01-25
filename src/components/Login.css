@@ -1,0 +1,35 @@
+/* * {
+    border: 1px red solid;
+} */
+
+.login {
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.login-input {
+    margin: 3% 0;
+    text-align: left;
+}
+
+.login input, button {
+    width: 100%;
+    padding: 4% 0;
+    background-color: black;
+    color: white;
+    margin: 1% 0;
+    border: none;
+}
+
+button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
