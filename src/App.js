@@ -29,9 +29,9 @@ function App() {
                 <Link to='/logout'>Logout</Link>
               </li>
             </ul>
-          </div>
-          
+          </div>          
         </div>
+        <div className='border-bottom'></div>
       
         <Switch>
           <Route path='/friends/add'>
