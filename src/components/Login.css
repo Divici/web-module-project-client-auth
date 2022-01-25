@@ -2,7 +2,7 @@
     border: 1px red solid;
 } */
 
-.login {
+.forms {
     font-weight: bold;
     text-transform: uppercase;
     width: 400px;
@@ -13,12 +13,12 @@ h1 {
     font-size: 4rem;
 }
 
-.login-input {
+.input {
     margin: 3% 0;
     text-align: left;
 }
 
-.login input, button {
+.forms input, button {
     width: 100%;
     padding: 4% 0;
     background-color: black;

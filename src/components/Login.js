@@ -5,19 +5,19 @@ const Login = () => {
 
     return (
         <div>
-            <div className="login">
+            <div className="forms">
                 <div>
                     <h1>LOGIN</h1>
                 </div>
                 
                 <form>
-                    <div className="login-input">
+                    <div className="input">
                         <label htmlFor="username">Username</label>
                         <input
                             id="username"
                         />  
                     </div>
-                    <div className="login-input">
+                    <div className="input">
                         <label htmlFor="password">Password</label>
                         <input
                             type='password'
