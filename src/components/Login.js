@@ -1,8 +1,10 @@
 import axios from "axios";
 import React, {useState} from "react";
+import { useHistory } from "react-router-dom";
 import loginStyles from './Login.css';
 
 const Login = () => {
+    const {push} = useHistory();
     const [credentials, setCredentials] = useState({
         username: '',
         password: ''
@@ -23,6 +25,7 @@ const Login = () => {
                 localStorage.setItem('token', resp.data.token);
                 localStorage.setItem('username', resp.data.username)
                 localStorage.setItem('role', resp.data.role)
+                push('/friends');
             })
             .catch(err=>{
                 console.log(err);

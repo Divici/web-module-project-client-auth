@@ -34,7 +34,7 @@ function App() {
         <div className='border-bottom'></div>
       
         <Switch>
-          <Route path='/friends/add'>
+          <Route exact path='/friends/add'>
             <AddFriends/>
           </Route>
           <Route path='/friends'>
